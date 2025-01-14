@@ -1,0 +1,26 @@
+
+
+##
+## # Network
+##
+
+
+
+
+##
+## ## Package / Network / Network Manager
+##
+
+network-manager
+network-manager-gnome
+
+
+
+
+##
+## ## Package / Network / Bluetooth
+##
+
+bluetooth
+##bluez
+blueman
