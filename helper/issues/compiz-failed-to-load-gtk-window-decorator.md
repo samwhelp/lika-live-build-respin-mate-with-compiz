@@ -212,3 +212,8 @@ Exec=compiz ccp
 ``` ini
 Exec=sh -c 'compiz ccp decoration --sm-client-id $DESKTOP_AUTOSTART_ID'
 ```
+
+
+## Hook
+
+* [6110-adjust-compiz-desktop-entry.hook.chroot](../../factory/hook/6110-adjust-compiz-desktop-entry.hook.chroot)
