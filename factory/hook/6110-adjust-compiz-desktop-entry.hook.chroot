@@ -1,0 +1,87 @@
+#!/bin/sh
+
+#set -e
+
+
+
+
+##
+## ## Adjust Compiz Desktop Entry
+##
+
+echo
+echo "Hook: running ${0}"
+echo
+
+
+
+
+##
+## > Refer: [https://bbs.archlinux.org/viewtopic.php?id=78558#p655237](https://bbs.archlinux.org/viewtopic.php?id=78558#p655237)
+##
+
+
+
+
+##
+## ## Util
+##
+
+util_compiz_desktop_entry_fix () {
+
+	local source_compiz_desktop_entry="/etc/skel/scripts/adjustment/compiz-start/fix/compiz.desktop"
+	local target_compiz_desktop_entry="/usr/share/applications/compiz.desktop"
+
+
+
+	if ! [ -e "${source_compiz_desktop_entry}" ]; then
+
+		echo
+		echo "##"
+		echo "## ## File Not Exists:"
+		echo "##"
+		echo "## > ${source_compiz_desktop_entry}"
+		echo "##"
+		echo
+
+		return 0
+
+	fi
+
+
+	echo
+	echo install -Dm644 "${source_compiz_desktop_entry}" "${target_compiz_desktop_entry}"
+	install -Dm644 "${source_compiz_desktop_entry}" "${target_compiz_desktop_entry}"
+
+
+	return 0
+}
+
+
+
+
+##
+## ## Model / Start
+##
+
+model_start () {
+
+	util_compiz_desktop_entry_fix
+
+	return 0
+}
+
+
+
+
+##
+## ## Main / Start
+##
+
+__main__ () {
+
+	model_start "${@}"
+
+}
+
+__main__ "${@}"
