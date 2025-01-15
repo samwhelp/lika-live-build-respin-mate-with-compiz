@@ -169,6 +169,13 @@ less /usr/bin/compiz-decorator
 ```
 
 
+## Debian Package
+
+* [compiz-core](https://packages.debian.org/stable/compiz-core)
+* [compiz-gnome](https://packages.debian.org/stable/compiz-gnome)
+* [mate-tweak](https://packages.debian.org/stable/mate-tweak)
+
+
 
 
 ## Search
