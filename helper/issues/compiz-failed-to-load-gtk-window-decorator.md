@@ -13,7 +13,7 @@
 
 > failed to load gtk-window-decorator.
 
-> but using mate-tweak to select Window Manager, it worked to load gtk-window-decorator.
+> but using [mate-tweak](https://github.com/ubuntu-mate/mate-tweak/blob/master/mate-tweak#L372) to select Window Manager, it worked to load gtk-window-decorator.
 
 > `less ~/.xsession-errors`
 
